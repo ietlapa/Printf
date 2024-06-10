@@ -6,7 +6,7 @@
 /*   By: ietlapa- <ietlapa-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 12:29:13 by ietlapa-          #+#    #+#             */
-/*   Updated: 2024/06/06 14:17:08 by ietlapa-         ###   ########.fr       */
+/*   Updated: 2024/06/10 12:00:10 by ietlapa-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int		ft_putunbr(unsigned int nbr);
 int		ft_putnbr(int nbr);
 int		ft_puthex(unsigned int nbr, const char dif);
 int		ft_putstr(char *str);
-int		ft_putptr(void *nbr);
+int		ft_putptr(unsigned long nb);
+int		ft_printptr(unsigned long nbr);
 
 #endif
