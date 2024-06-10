@@ -6,7 +6,7 @@
 /*   By: ietlapa- <ietlapa-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 16:05:52 by ietlapa-          #+#    #+#             */
-/*   Updated: 2024/06/10 12:05:51 by ietlapa-         ###   ########.fr       */
+/*   Updated: 2024/06/10 14:18:29 by ietlapa-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int	ft_printf(const char *str, ...)
 	va_end (arg);
 	return (result);
 }
-
+/*
 int	main ()
 {
 	int num = 23;
@@ -118,6 +118,21 @@ int	main ()
 	printf("printf = %x\n", x2);
 	ft_printf("mi print = %x\n", x3);
 	printf("printf = %x\n\n", x3);
+	return (0);
+}
+*/
+
+
+int main (void)
+{
+	int n;
+	int *p = &n;
+	int	i;
+	int j;
+
+	i = ft_printf("olakase    %p, %s, %s,   %%, %c, %i, 658 %u, %X\n", p, "", "hola", 'W', -420, 0, 1565);
+	j = printf("olakase    %p, %s, %s,   %%, %c, %i, 658 %u, %X\n", p, "", "hola", 'W', -420, 0, 1565);
+	ft_printf("%i = %i", i, j);
 	return (0);
 }
 
